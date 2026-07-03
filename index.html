@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lotus Supply - Loja Virtual</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <div class="top-actions">
+      <button class="circle-btn" onclick="abrirCarrinho()" aria-label="Carrinho">
+        <span class="count" id="cart-count">0</span>
+        <span class="icon">🛒</span>
+        <small>Carrinho</small>
+      </button>
+      <button class="circle-btn" onclick="abrirNotificacoes()" aria-label="Notificações">
+        <span class="count">2</span>
+        <span class="icon">🔔</span>
+        <small>Notificações</small>
+      </button>
+    </div>
+    <nav class="menu">
+      <a href="#inicio" class="active">Início</a>
+      <a href="#camisetas">Camisetas</a>
+      <a href="#colecoes">Coleções</a>
+      <a href="#sobre">Sobre Nós</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section-title" id="camisetas">
+      <div class="lotus-mini">♢</div>
+      <h1>NOSSAS CAMISETAS</h1>
+      <p>Estilo, atitude e autenticidade em cada detalhe.</p>
+    </section>
+
+    <section class="products" id="colecoes"></section>
+
+    <div class="center">
+      <button class="view-all" onclick="mostrarTodos()">Ver todas as camisetas →</button>
+    </div>
+
+    <section class="benefits" id="sobre">
+      <div class="benefit"><span>🏅</span><div><h3>Qualidade Premium</h3><p>Tecidos selecionados e acabamento impecável.</p></div></div>
+      <div class="benefit"><span>🛡️</span><div><h3>Compra Segura</h3><p>Seus dados protegidos com criptografia de ponta.</p></div></div>
+      <div class="benefit"><span>🚚</span><div><h3>Entrega para todo o Brasil</h3><p>Com rastreamento e suporte dedicado.</p></div></div>
+    </section>
+
+    <section class="contact" id="contato">
+      <div class="location-box">
+        <h2>📍 Nossa Localização</h2>
+        <p>Visite nossa loja física e conheça de perto nossos produtos e coleções exclusivas.</p>
+        <div class="info-card">
+          <p><strong>Lotus Supply Store</strong><br>Rua Estrada Rio Negro, 7090<br>Colonial, São Bento do Sul - SC<br>CEP: 89288-540</p>
+          <p><strong>Horário de Funcionamento</strong><br>Seg - Sex: 08h às 18h<br>Sáb: 10h às 16h</p>
+          <p>📞 (47) 99679-3992</p>
+          <p>📷 @guilhermeoproprioo</p>
+        </div>
+      </div>
+
+      <div class="map-box">
+        <div class="pin">🪷</div>
+        <span>Lotus Supply Store</span>
+      </div>
+
+      <div class="whatsapp-box">
+        <h2>🪷 Fale Conosco</h2>
+        <p>Dúvidas, pedidos ou suporte?<br>Estamos prontos para te atender!</p>
+        <a class="whatsapp" target="_blank" href="https://wa.me/5547996793992?text=Olá,%20tenho%20interesse%20nas%20camisetas%20da%20Lotus%20Supply">💬 Converse pelo WhatsApp</a>
+        <small>Atendimento rápido e personalizado para você! 💜</small>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-bg"></div>
+    <div class="footer-content">
+      <div class="brand-footer">
+        <h2>LOTUS SUPPLY</h2>
+        <p>Floresça. Inspire. Seja você.</p>
+      </div>
+      <div class="socials">
+        <a target="_blank" href="https://instagram.com/guilhermeoproprioo">Instagram</a>
+        <a target="_blank" href="https://tiktok.com/@lotussupply">TikTok</a>
+        <a target="_blank" href="https://youtube.com/">YouTube</a>
+        <a target="_blank" href="https://facebook.com/">Facebook</a>
+      </div>
+    </div>
+    <p class="copy">© 2026 Lotus Supply. Todos os direitos reservados.</p>
+  </footer>
+
+  <aside class="cart-panel" id="cart-panel">
+    <button class="close" onclick="fecharCarrinho()">×</button>
+    <h2>Seu Carrinho</h2>
+    <div id="cart-items"></div>
+    <h3>Total: <span id="cart-total">R$ 0,00</span></h3>
+    <button class="checkout" onclick="finalizarWhatsApp()">Finalizar pelo WhatsApp</button>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
